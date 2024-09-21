@@ -9,7 +9,9 @@
 }
 body{
     
-        font-family: "Poppins", sans-serif;
+        font-family: 'Roboto', sans-serif; 
+        font-size: 17px;
+  
         background-color: rgb(229, 229, 179);
        
 }
