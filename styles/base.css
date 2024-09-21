@@ -9,7 +9,12 @@ body{
         background-color: rgb(229, 229, 179);
        
 }
-
+main {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
 
 nav{
     background-color: rgb(7, 14, 20, 34);
