@@ -15,5 +15,12 @@ nav {
 .hamburger {
     display: none; /* Hide hamburger menu on larger screens */
 }
+body{
+    font-size: 17px;
+    background-color: rgb(218, 216, 219);
+    font-family: "Roboto", sans-serif;
+    font-weight:   100;
+    font-style: normal;
+}
 
 }
