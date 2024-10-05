@@ -15,11 +15,10 @@ nav {
 .hamburger {
     display: none; /* Hide hamburger menu on larger screens */
 }
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
 
 }
