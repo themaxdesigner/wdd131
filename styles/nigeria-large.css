@@ -1,0 +1,38 @@
+@media screen and (min-width: 740px) {
+    .data {
+        position: absolute;
+        top: 8rem;
+        margin-left: 1rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        max-width: 300px;
+    }
+
+    .weather {
+        position: absolute;
+        background-color: white;
+        opacity: 0.9;
+        top: 23rem;
+        right: 1rem;
+        max-width: 250px;
+    }
+
+    .data h2, .weather h2 {
+        background-color: yellow;
+        padding: 0.5rem;
+        margin: .5rem 0;
+        text-align: left;
+    }
+
+    .data-group, .weather-group {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        gap: 2px;
+        margin-bottom: .5rem;
+        padding: 0rem 1rem;
+    }
+
+    .weather-icon {
+        width: 80px;
+        margin: 10px auto;
+    }
+}

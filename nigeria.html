@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD-131 Country Page - Nigeria</title>
+    <meta name="description" content="Country Page Development - Nigeria - WDD 131 (Dynamic Web Fundamentals)">
+    <meta name="author" content="Johnson Nsisong Gabriel">
+    <link href="styles/nigeria.css" rel="stylesheet">
+    <link href="styles/nigeria-large.css" rel="stylesheet">
+    <script src="scripts/nigeria.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/nigeria-large.webp" media="(min-width: 800px)">
+                <img src="images/nigeria-flag.png" alt="Abuja City" width="500" height="250">
+            </picture>
+            <aside class="data">
+                <h2>Data</h2>
+                <div>
+                    <div class="data-group">
+                        <label for="area">Area:</label>
+                        <span id="area">923,768 sq km</span>
+                    </div>
+                    <div class="data-group">
+                        <label for="population">Population:</label>
+                        <span id="population">220,000,000</span>
+                    </div>
+                    <div class="data-group">
+                        <label for="capital">Capital:</label>
+                        <span id="capital">Abuja</span>
+                    </div>
+                    <div class="data-group">
+                        <label for="languages">Languages:</label>
+                        <span id="languages">English, Hausa, Yoruba, Igbo</span>
+                    </div>
+                    <div class="data-group">
+                        <label for="currency">Currency:</label>
+                        <span id="currency">Nigerian Naira (NGN)</span>
+                    </div>
+                    <div class="data-group">
+                        <label for="time-zone">Time Zone:</label>
+                        <span id="time-zone">UTC +1</span>
+                    </div>
+                    <div class="data-group">
+                        <label for="calling-code">Calling Code:</label>
+                        <span id="calling-code">+234</span>
+                    </div>
+                    <div class="data-group">
+                        <label for="internet">Internet TLD:</label>
+                        <span id="internet">.ng</span>
+                    </div>                   
+                </div>
+            </aside>
+            <aside class="weather">
+                <h2>Weather</h2>
+                <div>
+                    <div class="weather-group">
+                        <label for="temperature">Temperature:</label>
+                        <span id="temperature">30 ⁰C</span>
+                    </div>
+                    <div class="weather-group">
+                        <label for="condition">Condition:</label>
+                        <span id="condition">Sunny</span>
+                    </div>
+                    <div class="weather-group">
+                        <img src="images/weather-sunny.svg" alt="Sunny Icon" class="weather-icon">
+                    </div>
+                    <div class="weather-group">
+                        <label for="wind">Wind:</label>
+                        <span id="wind">15 km/h</span>
+                    </div>
+                    <div class="weather-group">
+                        <label for="wind-chill">Wind Chill:</label>
+                        <span id="wind-chill"></span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🍁 Johnson Nsisong Gabriel 🍁 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
