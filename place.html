@@ -6,19 +6,21 @@
     <title>WDD-131 Country Page - Nigeria</title>
     <meta name="description" content="Country Page Development - Nigeria - WDD 131 (Dynamic Web Fundamentals)">
     <meta name="author" content="Johnson Nsisong Gabriel">
-    <link href="styles/nigeria.css" rel="stylesheet">
-    <link href="styles/nigeria-large.css" rel="stylesheet">
-    <script src="scripts/nigeria.js" defer></script>
+    <link href="styles/place.css" rel="stylesheet">
+    <link href="styles/place-large.css" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Nigeria</h1>
     </header>
+    <div class="empty-box"></div>
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/nigeria-large.webp" media="(min-width: 800px)">
-                <img src="images/nigeria-flag.png" alt="Abuja City" width="500" height="250">
+                <source srcset="images/largeview.webp" media="(min-width: 800px)">
+                <source srcset="images/mobile-nigeria.webp" media="(max-width: 600px)">
+                <img src="images/largeview.webp" alt="Stockholm City" width="500" height="250">
             </picture>
             <aside class="data">
                 <h2>Data</h2>
@@ -52,13 +54,17 @@
                         <span id="calling-code">+234</span>
                     </div>
                     <div class="data-group">
-                        <label for="internet">Internet TLD:</label>
+                        <label for="internet">Internet TLD:</label> 
                         <span id="internet">.ng</span>
                     </div>                   
                 </div>
             </aside>
             <aside class="weather">
-                <h2>Weather</h2>
+                <h2 >Weather <span class="emoji">⛅</span></h2>  
+                <span class="mobile-image"><img src="images/weather-mobile.svg" alt=""></span>           
+                <div class="weather-group">
+            
+                </div> 
                 <div>
                     <div class="weather-group">
                         <label for="temperature">Temperature:</label>
@@ -68,9 +74,7 @@
                         <label for="condition">Condition:</label>
                         <span id="condition">Sunny</span>
                     </div>
-                    <div class="weather-group">
-                        <img src="images/weather-sunny.svg" alt="Sunny Icon" class="weather-icon">
-                    </div>
+                    
                     <div class="weather-group">
                         <label for="wind">Wind:</label>
                         <span id="wind">15 km/h</span>
@@ -84,8 +88,8 @@
         </div>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> 🍁 Johnson Nsisong Gabriel 🍁 Nigeria</p>
-        <p id="lastModified"></p>
+        <p> &copy;<span id="currentyear"></span>Osamuyimen-Igbineweka Nigeria</p>
+        <p id="lastModified"> </p>
     </footer>
 </body>
 </html>
