@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+   
+}
+
+form {
+    background-color: #8389b1;
+    padding: 20px;
+    /* border-radius: 10px; */
+    max-width: 400px;
+    margin: auto;
+   
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #4A154B;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#rating {
+    display: flex;
+    gap: 5px;
+}
+
+#rating input {
+    display: none;
+}
+
+#rating label {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#rating input:checked + label {
+    color: rgb(26, 184, 24);
+}
+
+input[type="submit"] {
+    background-color: #4A154B;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5e1763;
+}
+
+footer {
+    background-color: rgb(31, 32, 31);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center; 
+}
+.product{
+background-color: rgb(12, 9, 9);
+color: white;
+margin-top: 10px;
+
+padding: 20px;
+max-width: 400px;
+margin: auto;
+text-align: center;
+margin-bottom: 20px;
+
+
+}
