@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="styles/review.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <h1>Your Reviews</h1>
+    <p id="reviewCount"></p>
+
+    <script>
+        // Display the completed reviews count
+        const completedReviews = localStorage.getItem('completedReviews') || 0;
+        document.getElementById("reviewCount").textContent = `You have completed ${completedReviews} reviews.`;
+    </script>
+</body>
+</html>
+    

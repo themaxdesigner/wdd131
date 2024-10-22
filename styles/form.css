@@ -57,7 +57,7 @@ input[type="date"] {
 }
 
 #rating input:checked + label {
-    color: rgb(26, 184, 24);
+    color: rgb(185, 197, 185);
 }
 
 input[type="submit"] {
