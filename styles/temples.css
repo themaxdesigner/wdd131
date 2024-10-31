@@ -24,7 +24,7 @@ header {
 nav {
     display: none; /* Hide the nav links by default on small screens */
     flex-direction: column;
-    gap: 1rem;
+    
 }
 
 nav a {

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Igbineweka Osamuyimen Emmanuel</title>
+    <meta name="description" content="Igbineweka Osamuyimen Emmanuel WDD131 Form">
+    <meta name="author" content="Igbineweka Osamuyimen Emmanuel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <h1>Your Reviews</h1>
+    <p id="reviewCount"></p>
+
+    <script>
+        // Display the completed reviews count
+        const completedReviews = localStorage.getItem('completedReviews') || 0;
+        document.getElementById("reviewCount").textContent = `You have completed ${completedReviews} reviews.`;
+    </script>
+</body>
+</html>
