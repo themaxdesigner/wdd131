@@ -12,11 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Handle form submission
     document.querySelector('form').addEventListener('submit', handleFormSubmission);
+    
 
-    // Hamburger menu functionality
-    const hamburger = document.querySelector('.hamburger'); // Select the hamburger button
-    const nav = document.querySelector('nav');              // Select the nav element
-    hamburger.addEventListener('click', toggleHamburgerMenu);
 });
 
 // Function to populate product select options
@@ -57,18 +54,28 @@ function handleFormSubmission(event) {
         window.location.href = 'review.html';
     }, 500); // 500ms delay
 }
+document.addEventListener("DOMContentLoaded", function() {
+    // Set current year
+    const currentYear = new Date().getFullYear();
+    document.getElementById("currentyear").textContent = currentYear;
 
-// Function to toggle the hamburger menu
-function toggleHamburgerMenu() {
-    const nav = document.querySelector('nav'); // Select the nav element
-    nav.classList.toggle('show'); // Toggle the 'show' class on the nav
+    // Set last modified date
+    const lastModifiedDate = document.lastModified;
+    document.getElementById("lastModified").textContent = `Last modified: ${lastModifiedDate}`;
 
-    // Toggle between hamburger (☰) and close (✖) symbols
-    const hamburger = document.querySelector('.hamburger');
-    hamburger.textContent = hamburger.textContent === "☰" ? "✖" : "☰";
-}
+    // Hamburger menu functionality
+    const hamburger = document.querySelector('.hamburger'); // Select the hamburger button
+    const nav = document.querySelector('nav');              // Select the nav element
 
-// Sample HTML for lazy loading images
-// Make sure to include this in your HTML:
-// <img src="image.jpg" loading="lazy" alt="Description">
-// Adjust the 'src' as necessary for your images.
+    // Add click event to the hamburger button
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('show');  // Toggle the 'show' class on the nav
+        
+        // Toggle between hamburger (☰) and close (✖) symbols
+        if (hamburger.textContent === "☰") {
+            hamburger.textContent = "✖"; // Change to X
+        } else {
+            hamburger.textContent = "☰"; // Change back to hamburger
+        }
+    });
+});

@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    box-sizing: border-box;
   
 
    
@@ -42,9 +42,13 @@ nav a {
    
 
 }
-nav.show {
+
+
+
+
+/* nav.show {
     display: flex;
-}
+} */
 
 
 nav a:hover {
@@ -492,15 +496,6 @@ margin-bottom: 20px;
         background-color: #1a1a48;
         color: white;
     }
-    /* header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1px;
-        
-        color: white;
-     
-    } */
     
     
     nav {
@@ -656,7 +651,11 @@ margin-bottom: 20px;
 }
 .journey{
 font-size: 20px; 
-color: rgb(244, 242, 242); 
+color: rgb(244, 242, 242);  
+
+
+
+
 }
 
 }
